@@ -7,16 +7,14 @@ const router = express.Router()
 
 //////////////// GET REQUESTS \\\\\\\\\\\\\\\\
 
-router.post('/auth', login.login)
-
  // add a new event
 router.post('/event/create', events.create)
 
 // view list of events
-router.get("/events", events.index)
+router.get("/event", events.index)
 
 // view specific event by id
-router.get("/events/:id", events.show)
+router.get("/event/:id", events.show)
         // ++ extension
 
 // view specific event by NAME
