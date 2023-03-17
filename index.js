@@ -28,7 +28,6 @@ app.use( async (req, res, next) => {
     res.sendStatus(403)
   }  
   if (user[0].token === authHeader) {
-    console.log("user token does indeed equal auth")
     next();
   } else {
     res.sendStatus(403);

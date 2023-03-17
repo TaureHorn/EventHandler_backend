@@ -3,7 +3,7 @@ const createError = require('http-errors');
 
 let events = [];
 
-exports.index = function (req, res) {
+exports.index = function(req, res) {
     Event.find().then((events) => {
         res.send(events);
     })
